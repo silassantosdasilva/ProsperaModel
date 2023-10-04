@@ -1,7 +1,6 @@
 ﻿namespace ProsperaModel.Models
 {
-    public class ObjetivosFinanceirosModel
-    {
+    public class ObjetivosFinanceirosModeltestetesteteste    {
         public int ObjFinID { get; set; }
         public decimal ObjFinValorAlvo { get; set; }
         public DateTime ObjFinDataVencimento { get; set; }
