@@ -2,7 +2,7 @@
 CREATE TABLE Extrato (
     IdExtrato INT PRIMARY KEY,
     NomeExtrat VARCHAR(25) NOT NULL,
-    TipoExtrat VARCHAR(25) UNIQUE NOT NULL,
+    TipoExtrat VARCHAR(25) NOT NULL,
     ValorExtrat MONEY NOT NULL,
     NomBancoExtrat VARCHAR(25) NOT NULL,
     CodContaExtrat INT NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE ContasPagar (
 
 CREATE TABLE Orcamento (
     IdOrcamento INT PRIMARY KEY,
-    NomeOrca VARCHAR(80),
+    NomeOrca VARCHAR(25),
     DatEmissaoOrca DATE,
     DataValidadeOrca DATE,
     DescricaoOrca VARCHAR(80),
@@ -91,7 +91,7 @@ CREATE TABLE Usuario (
 
 CREATE TABLE ConfiguracaoUsuario (
     IdConfiguracaoUsuario INT PRIMARY KEY,
-    IdUsuario INT,
+    UsuarioConfiguracaoUsuario INT,
     NotificacoesAtivadas BIT
 );
 
@@ -119,38 +119,21 @@ CREATE TABLE Transferencia (
     UsuarioTransfe INT
 );
 
-CREATE TABLE Devedor (
-    IdDevedor INT PRIMARY KEY,
-    NomDevedor VARCHAR(120),
-    EndereDevedor VARCHAR(80),
-    CidadeDevedor VARCHAR(80),
-    BairroDevedor VARCHAR(80),
-    UFDevedor VARCHAR(10),
-    CEPDevedor VARCHAR(10),
-    TeleDevedor VARCHAR(20),
-    Tele2Devedor VARCHAR(20),
-    EmailDevedor VARCHAR(120),
-    ObservaDevedor VARCHAR(80),
-    DatCadasDevedor DATE,
-    StatusDevedor VARCHAR(20),
-    SaldoDevedor MONEY
-);
-
-CREATE TABLE Pagador (
-    IdPagador INT PRIMARY KEY,
-    NomPagador VARCHAR(120),
-    EnderePagador VARCHAR(80),
-    CidadePagador VARCHAR(80),
-    BairroPagador VARCHAR(80),
-    UFPagador VARCHAR(10),
-    CEPPagador VARCHAR(10),
-    TelePagador VARCHAR(20),
-    Tele2Pagador VARCHAR(20),
-    EmailPagador VARCHAR(120),
-    ObservaPagador VARCHAR(80),
-    DatCadasPagador DATE,
-    StatusPagador VARCHAR(20),
-    SaldoPagador MONEY
+CREATE TABLE Terceiros (
+    IdTerceiros INT PRIMARY KEY,
+    NomTerceiros VARCHAR(120),
+    EndereTerceiros VARCHAR(80),
+    CidadeTerceiros VARCHAR(80),
+    BairroTerceiros VARCHAR(80),
+    UFTerceiros VARCHAR(10),
+    CEPTerceiros VARCHAR(10),
+    TeleTerceiros VARCHAR(20),
+    Tele2Terceiros VARCHAR(20),
+    EmailTerceiros VARCHAR(120),
+    ObservaTerceiros VARCHAR(80),
+    DatCadasTerceiros DATE,
+    StatusTerceiros VARCHAR(20),
+    SaldoTerceiros MONEY
 );
 
 -- Tabela StatusTransacao
