@@ -1,14 +1,17 @@
-html{
+html {
   font-size: 24px;
   font-family: 'Inter', sans-serif;
-  overflow: hidden; 
+  overflow: hidden;
+
 
 }
-ul,li{
+
+ul,
+li {
   list-style: none;
 }
 
-a:not(#BtnEsqSenha,#BtnInscrevase,#BtnAjuda,#BtnCadastrarLogar){
+a:not(#BtnEsqSenha, #BtnInscrevase, #BtnAjuda, #BtnCadastrarLogar) {
   text-decoration: none;
 
 }
@@ -17,10 +20,12 @@ input {
   font-family: 'Inter', sans-serif;
 
 }
-body{
-  width: 100%;
+
+body {
+  background-color: var(--color-Fundo) !important;
   /* background-color: black; */
 }
+
 :root {
   --color-default: #242424;
   --color-primary: #e64c30;
@@ -29,9 +34,8 @@ body{
   --color-tertiary2: #fdf6f6;
   --color-quartiary: #7836FA;
   --color-quintiaty: #373435;
-  list-style: none;
-  
-  
+  --color-Sextiary:#605F60;
+  --color-Fundo: #F4F2FF;
 }
 
 
@@ -43,42 +47,41 @@ html {
 
 }
 
-body {
+body:not(.MenusSelecao h4) {
   font-size: 14px;
 
 
 }
+
 /*#region Login*/
 
 /*#region NavBar */
-.MenuNav
-{
- position: relative;
- width: 100%;
- height: 3rem;
-  
+.MenuNav {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+
 }
 
-.Nav-Container{
-  width:17rem;
- display: flex;
+.Nav-Container {
+  width: 17rem;
+  display: flex;
   position: absolute;
   left: 4em;
 }
 
-.Nav-Container img{
+.Nav-Container img {
   width: 60px;
   padding-right: 2em;
 }
 
-.Nav-Container h2{
+.Nav-Container h2 {
   color: var(--color-tertiary);
   font-weight: 800;
   padding-right: 2em;
 }
 
-.Nav-Container li
-{
+.Nav-Container li {
   line-height: 42px;
   background-color: var(--color-quartiary);
   width: 10em;
@@ -88,15 +91,16 @@ body {
   top: 0.6em;
   border-radius: 8px;
   transition: .5s;
-  
+
 }
-.Nav-Container li:hover
-{
-background-color: var(--color-tertiary);
-transition: .5s;
-  
+
+.Nav-Container li:hover {
+  background-color: var(--color-tertiary);
+  transition: .5s;
+
 }
-.Nav-Container li a{
+
+.Nav-Container li a {
   color: white;
   font-weight: 600;
   padding: 1em 3.5em;
@@ -107,7 +111,7 @@ transition: .5s;
 
 /*#region Central Div*/
 
-.div-central{
+.div-central {
 
   width: 50%;
   position: relative;
@@ -116,28 +120,28 @@ transition: .5s;
   top: 8rem;
   height: 23.5rem;
   /* background-color: aqua; */
-  
+
 
 }
 
-.ImgFundo img{
+.ImgFundo img {
   width: 55%;
   position: absolute;
   top: 1em;
-  left:1em;
+  left: 1em;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.ImgFundo2 img{
+.ImgFundo2 img {
   /* background-color: red; */
-position: absolute;
-top: -20em;
-left: 31em;
-width: 1050px;
+  position: absolute;
+  top: -20em;
+  left: 31em;
+  width: 1050px;
 }
 
 
-.CardInfLogin{
+.CardInfLogin {
   background-color: white;
   position: absolute;
   right: 0;
@@ -145,7 +149,8 @@ width: 1050px;
   height: 100%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.LoginInf{
+
+.LoginInf {
   /* background-color: #e64c30; */
   position: relative;
   align-items: center;
@@ -153,73 +158,78 @@ width: 1050px;
   width: 80%;
   height: 36em;
 }
-.LoginInf h2{
 
- text-align: left;
- position: absolute;
- top: 3em;
- color: var(--color-tertiary);
+.LoginInf h2 {
+
+  text-align: left;
+  position: absolute;
+  top: 3em;
+  color: var(--color-tertiary);
 }
-.LiTxtLogin{
+
+.LiTxtLogin {
   position: relative;
   top: 10.6em;
-  
-  }
- .LiTxtLogin img{
+
+}
+
+.LiTxtLogin img {
   position: absolute;
   width: 20px;
   left: 1.3em;
   top: .9em;
   z-index: 1;
- 
-  }
-.LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha){
+
+}
+
+.LoginInf h4:not(.CheckH4):not(.BtxtEsqSenha) {
 
   position: absolute;
   top: 80%;
   color: var(--color-tertiary);
- }
+}
 
 
- 
- .LoginInf input:not(#ChekManterLogado)
- {
+
+.LoginInf input:not(#ChekManterLogado) {
   position: absolute;
   top: 35%;
- border: none;
- margin: 0;
- width: 12rem;
- border-radius: 20px;
- height: 3em;
- box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin: 0;
+  width: 12rem;
+  border-radius: 20px;
+  height: 3em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
- }
+}
 
- .LiTxtSenha{
+.LiTxtSenha {
   top: 48%;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
- }
- .LiTxtSenha img{
- position: absolute;
- width: 20px;
- left: 1.3em;
- top: 0.7em;
- }
-.LoginInf input::placeholder
-{
- padding-left: 3em;
- color: var(--color-tertiary);
- font-weight: 700;
- }
- 
- .CheckH4{
+}
+
+.LiTxtSenha img {
+  position: absolute;
+  width: 20px;
+  left: 1.3em;
+  top: 0.7em;
+}
+
+.LoginInf input::placeholder {
+  padding-left: 3em;
+  color: var(--color-tertiary);
+  font-weight: 700;
+}
+
+.CheckH4 {
   position: absolute;
   top: 50%;
   left: 13%;
   color: var(--color-tertiary);
- }
-.LiBtnLogin{
+}
+
+.LiBtnLogin {
   position: absolute;
   width: 14em;
   height: 2.5em;
@@ -231,7 +241,8 @@ width: 1050px;
   transition: .5s;
 
 }
-.LiBtnLogin a{
+
+.LiBtnLogin a {
   color: white;
   font-size: 17px;
   top: 1em;
@@ -239,168 +250,178 @@ width: 1050px;
   padding: 0.8em 4.4em;
   border-radius: 5px;
 }
-.LiBtnLogin:hover{
+
+.LiBtnLogin:hover {
   background-color: var(--color-quartiary);
   transition: .5s;
 }
-.BtxtInscrevase{
+
+.BtxtInscrevase {
   position: absolute;
   right: 3em;
 }
-.BtxtEsqSenha{
+
+.BtxtEsqSenha {
   position: absolute;
   bottom: 0;
   right: 3em;
   /* background-color: red; */
 }
-#BtnAjuda{
-   position: absolute;
-   right: 10.7em;
+
+#BtnAjuda {
+  position: absolute;
+  right: 10.7em;
 }
 
 
 @media screen and (max-width: 768px) {
 
-  .ImgFundo img{
+  .ImgFundo img {
     display: none;
   }
 
-  .ImgFundo2 img{
+  .ImgFundo2 img {
     display: none;
   }
-   .div-central{
+
+  .div-central {
     left: 0;
     width: 80%;
     /* background-color: #7836FA; */
-   }
-.CardInfLogin{
-  left:11em;
-  width: 63%;
-
-}
-
-.Nav-Container{
- width: 80%;
- /* background-color: #801D7B; */
-}
-.Nav-Container li{
-position: absolute;
- right: 1.5em;
- }
-
-       
-
-}
-
-@media screen and (max-width: 360px){
-  .CardInfLogin{
-    left:4em;
-    width: 78%;
-  
   }
 
-  .LoginInf{
+  .CardInfLogin {
+    left: 11em;
+    width: 63%;
+
+  }
+
+  .Nav-Container {
+    width: 80%;
+    /* background-color: #801D7B; */
+  }
+
+  .Nav-Container li {
+    position: absolute;
+    right: 1.5em;
+  }
+
+
+
+}
+
+@media screen and (max-width: 360px) {
+  .CardInfLogin {
+    left: 4em;
+    width: 78%;
+
+  }
+
+  .LoginInf {
     right: 2em;
     /* background-color: #801D7B; */
   }
 
-  .Nav-Container{
+  .Nav-Container {
     /* background-color: #7836FA; */
     left: 1em;
   }
 
-#BtnLogin{
-  left: 6.4em;
-}
-
-}
-
-
-@media screen and (max-width: 375px){
-  .CardInfLogin{
-    left:4em;
-    width: 78%;
-  
+  #BtnLogin {
+    left: 6.4em;
   }
 
-  .LoginInf{
+}
+
+
+@media screen and (max-width: 375px) {
+  .CardInfLogin {
+    left: 4em;
+    width: 78%;
+
+  }
+
+  .LoginInf {
     right: 2em;
     /* background-color: #801D7B; */
   }
 
-  .Nav-Container{
+  .Nav-Container {
     /* background-color: #7836FA; */
     left: 1em;
   }
 
-#BtnLogin{
-  left: 6.4em;
-}
+  #BtnLogin {
+    left: 6.4em;
+  }
 }
 
-@media screen and (max-width: 390px){
-  .CardInfLogin{
-    left:2.3em;
+@media screen and (max-width: 390px) {
+  .CardInfLogin {
+    left: 2.3em;
     width: 82%;
     bottom: 7.8em;
-  
+
   }
 
-  .LoginInf{
+  .LoginInf {
     right: 2em;
     /* background-color: #801D7B; */
   }
 
-  .Nav-Container{
+  .Nav-Container {
     /* background-color: #7836FA; */
     left: 1em;
   }
 
-#BtnLogin{
-  left: 6.4em;
-}
-
-.LiTxtLogin input {
-  /* background-color: #7836FA; */
-  position: absolute;
-  left: .5em;
-}
-.LiTxtLogin img {
-  /* background-color: #7836FA; */
-  position: absolute;
-  left: 1.7em;
-}
-.LiTxtSenha{ 
-  position: absolute;
-  left: .5em;
-  width: 30%;}
-
-  #BtnLogin{
-  left: 3.8em;
+  #BtnLogin {
+    left: 6.4em;
   }
 
-.LoginInf h4{
-  right: 1.8em;
-}
+  .LiTxtLogin input {
+    /* background-color: #7836FA; */
+    position: absolute;
+    left: .5em;
+  }
 
-.Nav-Container img{
-position: absolute;
-width: 45px;
-height: 45px;
-top: 7.5em;
-z-index: 1;
-left: 7em;
+  .LiTxtLogin img {
+    /* background-color: #7836FA; */
+    position: absolute;
+    left: 1.7em;
+  }
 
-}
+  .LiTxtSenha {
+    position: absolute;
+    left: .5em;
+    width: 30%;
+  }
 
-.Nav-Container h2{
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 4.7em;
-  z-index: 1;
-  left: 7.3em;
-  
+  #BtnLogin {
+    left: 3.8em;
+  }
+
+  .LoginInf h4 {
+    right: 1.8em;
+  }
+
+  .Nav-Container img {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 7.5em;
+    z-index: 1;
+    left: 7em;
+
+  }
+
+  .Nav-Container h2 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 4.7em;
+    z-index: 1;
+    left: 7.3em;
+
   }
 
 }
@@ -409,7 +430,7 @@ left: 7em;
 
 /*#region Cadastrar*/
 
-.CardInfCadastrar{
+.CardInfCadastrar {
   background-color: white;
   position: absolute;
   right: 0;
@@ -417,7 +438,8 @@ left: 7em;
   height: 100%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.CadastrarInf{
+
+.CadastrarInf {
   /* background-color: #e64c30; */
   position: relative;
   align-items: center;
@@ -425,74 +447,75 @@ left: 7em;
   width: 80%;
   height: 36em;
 }
-.CadastrarInf h2{
 
- text-align: left;
- position: absolute;
- left: 6em;
- top: 1em;
- color: var(--color-tertiary);
+.CadastrarInf h2 {
+
+  text-align: left;
+  position: absolute;
+  left: 6em;
+  top: 1em;
+  color: var(--color-tertiary);
 }
 
- .CadastrarInf input:not(#ChekPermitirEnvioEmail)
- {
+.CadastrarInf input:not(#ChekPermitirEnvioEmail) {
   position: absolute;
   top: 35%;
- border: none;
- margin: 0;
- width: 12rem;
- border-radius: 20px;
- height: 3em;
- box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin: 0;
+  width: 12rem;
+  border-radius: 20px;
+  height: 3em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
- }
+}
 
- .LiTxtNome{
+.LiTxtNome {
   top: 20%;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
- }
- .LiTxtNome img{
- position: absolute;
- width: 20px;
- left: 1.3em;
- top: 0.7em;
- }
+}
 
- .LiTxtEmail{
-  top: 31%;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
- }
-
- .LiTxtEmail img{
+.LiTxtNome img {
   position: absolute;
   width: 20px;
   left: 1.3em;
   top: 0.7em;
-  }
- 
-  .LiTxtSenha{
-    top: 42%;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  .LiTxtSenha img{
-    position: absolute;
+.LiTxtEmail {
+  top: 31%;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.LiTxtEmail img {
+  position: absolute;
   width: 20px;
   left: 1.3em;
   top: 0.7em;
-  }
+}
 
-.LiTxtCPF{
+.LiTxtSenha {
+  top: 42%;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.LiTxtSenha img {
+  position: absolute;
+  width: 20px;
+  left: 1.3em;
+  top: 0.7em;
+}
+
+.LiTxtCPF {
   top: 53%;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 
-.LiTxtCPF img{
+.LiTxtCPF img {
   position: absolute;
   width: 20px;
   left: 1.3em;
@@ -502,16 +525,15 @@ left: 7em;
 
 
 
-.CadastrarInf input::placeholder
-{
- padding-left: 3em;
- color: var(--color-tertiary);
- font-weight: 700;
- }
- 
+.CadastrarInf input::placeholder {
+  padding-left: 3em;
+  color: var(--color-tertiary);
+  font-weight: 700;
+}
 
 
-#BtnCadastrar{
+
+#BtnCadastrar {
   position: absolute;
   width: 13em;
   height: 2.5em;
@@ -523,29 +545,31 @@ left: 7em;
   transition: .5s;
 
 }
-#BtnCadastrar a{
+
+#BtnCadastrar a {
   color: white;
   font-size: 17px;
   top: 1em;
   line-height: 35px;
   border-radius: 5px;
 }
-#BtnCadastrar:hover{
+
+#BtnCadastrar:hover {
   background-color: var(--color-quartiary);
   transition: .5s;
 }
 
-.BtxtInscrevase{
+.BtxtInscrevase {
   position: absolute;
   bottom: 0;
 }
 
-.CheckH4Cadastro {  
+.CheckH4Cadastro {
   position: absolute;
   top: 61%;
-  left:8%;
+  left: 8%;
   color: var(--color-tertiary);
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 
@@ -553,33 +577,32 @@ left: 7em;
 
 /*#region PaginaIncial */
 
-
-
 /*#region MenuLateral*/
-.MenuLateral{
-  /* background-color: #801D7B; */
-  position: absolute;
+.MenuLateral {
+  background-color:white;
+  position: relative;
   width: 18%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  height: 66.7em;
+  top: -40.2rem;
+  left: -.5em;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.MenuLateral h4 img:first-child{
+.MenuLateral h4 img:first-child {
   position: absolute;
   top: 1em;
   left: 1em;
   width: 8%;
 }
-.MenuLateral h4:first-child{
-  padding-left: 4.5em;
- padding-top: 0.2em;
-  color: var(--color-quintiaty);
+
+.MenuLateral h4:first-child {
+  padding-left: 4em;
+  padding-top: 1.3em;
+  color: var(--color-Sextiary);
   letter-spacing: 1px;
 }
 
-#BtnUsuarioConfig{
+#BtnUsuarioConfig {
   position: absolute;
   display: flex;
   right: 0;
@@ -587,56 +610,251 @@ left: 7em;
   background-color: #7836FA;
 
 }
-#BtnUsuarioConfig img{
+
+#BtnUsuarioConfig img {
   position: absolute;
-  width: 4em;
+  width: 3em;
   right: 1em;
   top: 1em;
+  transition: .3s;
 
 }
+#BtnUsuarioConfig  img:hover{
+  transform: scale(1.1);
+  transition: .3s;
+}
 
-.MenusSelecao{
-  position: relative;
-  top: 5em;
+.MenusSelecao {
+  position: absolute;
+  top: 8em;
   height: 90%;
-  width: 100%;
+  width: 88.3%;
+  /* background-color: #373435; */
+}
+.MenusSelecao h2{
+ color: var(--color-Sextiary);
+ font-weight: 700 !important;
+ font-size: 20px !important;
 
 }
 
-.MenusSelecao li  img{
-width: 8%;
+
+.MenusSelecao  li img {
+  width: 9%;
+  left: 4em;
+}
+
+.MenusSelecao a:not(.MenuAplicativo a){
+  position: absolute;
+  display: block;
+  line-height: 37px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-Sextiary);
+  /* alinha na vertical */
+  width: 9em;
+  height: 2.5em;
+  left: 6em;
+  margin-top: 2em;
+  padding-left: .4em;
+}
+
+.Selecao1 a {
+  position: absolute;
+  top: 2em;
+}
+.Selecao1 img {
+  position: absolute;
+  top: 4.7em;
+}
+.Selecao2 a {
+  position: absolute;
+  top:4.8em;
+}
+.Selecao2 img {
+  position: absolute;
+  top: 8em;
+}
+.Selecao3 a {
+  position: absolute;
+  top: 7.5em;
+}
+.Selecao3 img {
+  position: absolute;
+  top: 11em;
+}
+
+.Selecao4 a {
+  position: absolute;
+  top: 10.2em;
+  color: var(--color-Sextiary) !important;
+}
+.Selecao4 img {
+  position: absolute;
+  top: 14em;
+}
+.Selecao5 a {
+  position: absolute;
+  top: 12.6em;
+}
+
+.Selecao5 img {
+  position: absolute;
+  top: 17em;
+}
+.Selecao6 a {
+  position: absolute;
+  top: 15.2em;
+}
+.Selecao6 img {
+  position: absolute;
+  top: 20em;
+}
+.Selecao7 a {
+  position: absolute;
+  top: 17.7em;
+}
+.Selecao7 img {
+  position: absolute;
+  top: 23em;
+}
+.Selecao8 a {
+  position: absolute;
+  top: 20em;
+  text-decoration: none;
+}
+.Selecao8 img {
+  position: absolute;
+  top: 25.6em;
+}
+.MenusSelecao a:hover:not(.MenuAplicativo a) {
+  color: white !important;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: var(--color-tertiary);
+}
+
+.MenuAplicativo{
+/* background-color: red; */
 position: absolute;
-padding-top: 0.5em;
-left: 3em;
+left: 0;
+bottom: 2em;
+height: 24em;
+width: 88%;
 }
-.MenusSelecao li {
-
-padding-bottom: 3em;
-
+.MenuAplicativo h2{
+ padding-left: -1em;
+ font-size: 17px !important;
+ color: var(--color-Sextiary);
 }
-.MenusSelecao  li a {
-color: var(--color-quintiaty);
-font-weight: 700;
-padding-left: 3em;
-padding-top: 2em;
-}
+.MenuAplicativo img{
+position: absolute;
+width: 13em !important;
+left: 5em;
+top: 3.9em;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+border-radius:16px;
+transition: .3s;
+/* background-color: #242424; */
 
-.liBtnSelecao{
-  align-items: center;
-  line-height: 3em;
-  width: 10em;
-  height: .1em;
-  border-radius: 9px;
- 
-}
-
-.liBtnSelecao:hover{
-  color: white;
-  background-color: var(--color-quartiary);;
+ }
+ .MenuAplicativo h4{
+  position: absolute;
+  bottom: 3em;
+  font-size: 11px;
+ left: 1.5em;
+ color: var(--color-Sextiary);
+ }
+.MenuAplicativo img:hover{
+  transform: scale(1.1);
+  transition: .3s;
 }
 /*#endregion*/
 
 
 
+
+/*#endregion*/
+
+/*#region CardCentral*/
+.MenuLateral{
+  /* display: none; */
+}
+
+.Cards{
+  /* background-color: #373435; */
+  width: 60%;
+  height: 39rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 13.9rem;
+  top:-.6em;
+
+}
+.CardMovRecentes{
+  /* background-color: red; */
+  position: relative;
+  height: 15rem;
+  left: 4em;
+  bottom: -10.7em;
+  width: 102.5%;
+}
+.CabecalhoMovimentacoes{
+
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  width: 96%;
+  height: 3em;  
+}
+.CabecalhoMovimentacoes h2{
+  text-align: left;
+  margin-right: 10em;
+  font-size: 14px;
+}
+.InfMovimentacoes{
+  width: 95%;
+  position: absolute;
+  left: 0;
+  /* background-color: #242424; */
+}
+.InfMovimentacoes li{
+margin-bottom: 2em;
+}
+
+/* Estilizando minha barra de rolagem das transacoes */
+.InfMovimentacoes::-webkit-scrollbar {
+  width: 6px;
+  transition: .3s;
+}
+.InfMovimentacoes::-webkit-scrollbar-track {
+  background: white; /* Cor de fundo da pista da barra de rolagem */
+}
+.InfMovimentacoes::-webkit-scrollbar-thumb {
+  background: var(--color-quartiary); /* Cor da alça da barra de rolagem */
+}
+.InfMovimentacoes::-webkit-scrollbar-thumb:hover {
+  background: var(--color-tertiary); /* Cor da alça da barra de rolagem ao passar o mouse */
+  transition: .5s;
+}
+
+.InfMovimentacoes li input{
+  border: none;
+  outline: none;
+  line-height: 3em;
+  padding-left: 2em;
+  border-radius: 8px;
+  background-color: var(--color-quartiary);
+  color: white;
+}
+.InfMovimentacoes li {
+ background-color: #7836FA;
+ width: 47rem;
+ height: 3em;
+ border-radius: 8px;
+ 
+}
 
 /*#endregion*/

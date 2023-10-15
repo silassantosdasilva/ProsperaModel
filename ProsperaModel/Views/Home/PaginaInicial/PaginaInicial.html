@@ -8,56 +8,196 @@
     <!-- Evita que o usuario rotacione a tela ou aproxime para ver as informaçoes -->
     <meta name="viewport" content="width=device-width">
     <!-- link css -->
-    <link rel="stylesheet" href="/ProsperaModel/wwwroot/css/site.css">
+    <link rel="stylesheet" href="/wwwroot/css/site.css">
     <!-- Fonte inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/img/Favicon.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@1,100&display=swap"
         rel="stylesheet">
 
-    <title>Document</title>
+    <title>Prospera</title>
 </head>
 
 <body>
-    <section id="MenuOpções">
-        <div class="MenuLateral">
-            <h4><img src="/ProsperaModel/img/Login/IconeLogin.png">Prospera</h4>
-            <a href="#" id="BtnUsuarioConfig"><img src="/ProsperaModel/img/PaginaInicial/Menu/IconeUsuario.png"></a>
-            <ul class="MenusSelecao Container">
-                <h2>MENU</h2>
-                <li class="liBtnSelecao">
-                    <a href="#" id="BtnReceitas">Receitas</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Receitas.png">
-                </li>
-                <li>
-                    <a href="#" id="BtnDespesas">Despesas</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/IDespesas.png">
-                </li>
-                <li>
-                    <a href="#" id="BtnTransacoes">Transações</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Transacoes.png">
-                </li>
-                <li> 
-                    <a href="#" id="BtnMetas">Metas</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Metas.png">
-                </li>
-                <li>
-                    <a href="#" id="BtnOrcamento">Orçamentos</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Orcamento.png"></li>
-                <li>
-                    <a href="#" id="BtnContasBancaria">Contas Bancarias</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/ContasBancaria.png">
-                </li>
-                <li> <a href="#" id="BtnCadastroDevedorPagador">Cadastro Devedor/Pagador</a>
-                    <img src="/ProsperaModel/img/PaginaInicial/Menu/Devedor_Pagador.png">
-                </li>
-                <h2>Planos</h2>
-            </ul> class="ImgPlano">
 
-            </li>
-            <h4>Faça Upgrade para o Premium</h4>
-            </li>
+
+
+
+    <section id="CardCentral">
+        <div class="Cards container">
+            <ul class="CardTransacoes">
+                <li class="CardUltPagto">
+                    <h2>Pagamentos</h2>
+                    <h4>Ultimo Pagamento</h4>
+                    <span>R$<input type="text" value="1.500,00"></span>
+                    <img src="#">
+                </li>
+                <li class="CardUltReceb">
+                    <h2>Recebimentos</h2>
+                    <h4>Ultimo Recebimento</h4>
+                    <span>R$<input type="text" value="1.000,00"></span>
+                    <img src="#">
+                </li>
+                <li class="CardTotalTran">
+                    <h2>Trasações</h2>
+                    <h4>Total</h4>
+                    <span>R$<input type="text" value="500,00"></span>
+                    <img src="#">
+                </li>
+            </ul>
+            <ul class="CardEvulucaoMeta">
+                <ul>
+
+                </ul>
+            </ul>
+            <ul class="CardMovRecentes">
+                <li class="CabecalhoMovimentacoes">
+                    <h2>Descrição</h2>
+                    <h2>Valor</h2>
+                    <h2>Status</h2>
+                    <h2>Conta</h2>
+                    <h2>Observação</h2>
+                </li>
+                <ul class="InfMovimentacoes" style="max-height: 300px; overflow-y: auto;">
+                    <li class="Inf1">
+                        <input type="text" value="teste" readonly id="TxtDescInf1">
+                        <input type="text" value="teste" readonly id="TxtValorInf1">
+                        <input type="text" value="teste" readonly id="TxtStatusInf1">
+                        <input type="text" value="teste" readonly id="TxtContaInf1">
+                        <input type="text" value="teste" readonly id="TxtObsInf1">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf2">
+                        <input type="text" value="teste" readonly id="TxtDescInf2">
+                        <input type="text" value="teste" readonly id="TxtValorInf2">
+                        <input type="text" value="teste" readonly id="TxtStatusInf2">
+                        <input type="text" value="teste" readonly id="TxtContaInf2">
+                        <input type="text" value="teste" readonly id="TxtObsInf2">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf3">
+                        <input type="text" value="teste" readonly id="TxtDescInf3">
+                        <input type="text" value="teste" readonly id="TxtValorInf3">
+                        <input type="text" value="teste" readonly id="TxtStatusInf3">
+                        <input type="text" value="teste" readonly id="TxtContaInf3">
+                        <input type="text" value="teste" readonly id="TxtObsInf3">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf4">
+                        <input type="text" value="teste" readonly id="TxtDescInf4">
+                        <input type="text" value="teste" readonly id="TxtValorInf4">
+                        <input type="text" value="teste" readonly id="TxtStatusInf4">
+                        <input type="text" value="teste" readonly id="TxtContaInf4">
+                        <input type="text" value="teste" readonly id="TxtObsInf4">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf5">
+                        <input type="text" value="teste" readonly id="TxtDescInf5">
+                        <input type="text" value="teste" readonly id="TxtValorInf5">
+                        <input type="text" value="teste" readonly id="TxtStatusInf5">
+                        <input type="text" value="teste" readonly id="TxtContaInf5">
+                        <input type="text" value="teste" readonly id="TxtObsInf5">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf6">
+                        <input type="text" value="teste" readonly id="TxtDesInf6">
+                        <input type="text" value="teste" readonly id="TxtValorInf6">
+                        <input type="text" value="teste" readonly id="TxtStatusInf6">
+                        <input type="text" value="teste" readonly id="TxtContaInf6">
+                        <input type="text" value="teste" readonly id="TxtObsInf6">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf7">
+                        <input type="text" value="teste" readonly id="TxtDescInf7">
+                        <input type="text" value="teste" readonly id="TxtValorInf7">
+                        <input type="text" value="teste" readonly id="TxtStatusInf7">
+                        <input type="text" value="teste" readonly id="TxtContaInf7">
+                        <input type="text" value="teste" readonly id="TxtObsInf7">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf8">
+                        <input type="text" value="teste" readonly id="TxtDescInf8">
+                        <input type="text" value="teste" readonly id="TxtValorInf8">
+                        <input type="text" value="teste" readonly id="TxtStatusInf8">
+                        <input type="text" value="teste" readonly id="TxtContaInf8">
+                        <input type="text" value="teste" readonlyid="TxtObsInf8">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf9">
+                        <input type="text" value="teste" readonly id="TxtDescInf9">
+                        <input type="text" value="teste" readonly id="TxtValorInf9">
+                        <input type="text" value="teste" readonly id="TxtStatusInf9">
+                        <input type="text" value="teste" readonly id="TxtContaInf9">
+                        <input type="text" value="teste" readonly id="TxtObsInf9">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                    <li class="Inf10">
+                        <input type="text" value="teste" readonly id="TxtDescInf10">
+                        <input type="text" value="teste" readonly id="TxtValorInf10">
+                        <input type="text" value="teste" readonly id="TxtStatusInf10">
+                        <input type="text" value="teste" readonly id="TxtContaInf10">
+                        <input type="text" value="teste" readonly id="TxtObs10">
+                        <a href="#" id="BtnConsultar">Consultar</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="MenuOpções">
+
+        <div class="MenuLateral">
+            <h4><img src="/img/Login/IconeLogin.png">Prospera</h4>
+            <a href="#" id="BtnUsuarioConfig"><img src="/img/PaginaInicial/Menu/IconeUsuario.png"></a>
+            <ul class="MenusSelecao container">
+                <h2>Menu</h2>
+                <li class="Selecao1">
+                    <a href="#" id="BtnReceitas">Receitas</a>
+                    <img src="/img/PaginaInicial/Menu/Receitas.png">
+                </li>
+                <li class="Selecao2">
+                    <a href="#" id="BtnDespesas">Despesas</a>
+                    <img src="/img/PaginaInicial/Menu/IDespesas.png">
+                </li>
+                <li class="Selecao3">
+                    <a href="#" id="BtnTransacoes">Transações</a>
+                    <img src="/img/PaginaInicial/Menu/Transacoes.png">
+                </li>
+                <li class="Selecao4">
+                    <a href="#" id="BtnMetas">Metas</a>
+                    <img src="/img/PaginaInicial/Menu/Metas.png">
+                </li>
+                <li class="Selecao5">
+                    <a href="#" id="BtnOrcamento">Orçamentos</a>
+                    <img src="/img/PaginaInicial/Menu/Orcamento.png">
+
+                </li>
+                <li class="Selecao6">
+                    <a href="#" id="BtnContasBancaria">Contas Bancarias</a>
+                    <img src="/img/PaginaInicial/Menu/ContasBancaria.png">
+                </li>
+                <li class="Selecao7"> <a href="#" id="BtnCadastroDevedorPagador">Devedor/Pagador</a>
+                    <img src="/img/PaginaInicial/Menu/Devedor_Pagador.png">
+                </li>
+                <li class="Selecao8"> <a href="#" id="BtnAjuda">Ajuda</a>
+                    <img src="/img/PaginaInicial/Menu/Ajuda.png">
+                </li>
+
+                <ul class="MenuAplicativo">
+                    <h2>Aplicativo Mobile</h2>
+
+
+                    <a href="https://play.google.com/store/apps/details?id=net.zedge.android&hl=pt_BR&gl=US"
+                        target="_blank">
+                        <img src="/img/PaginaInicial/Menu/Qrcode.png"></a>
+
+                    <h4>Clique no Qrcode ou escaneie para Baixar o aplicativo</h4>
+                </ul>
+
+            </ul>
 
         </div>
 
@@ -74,8 +214,11 @@
 
 
 
+
+
+
     <!-- link js -->
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="/wwwroot/js/site.js" asp-append-version="true"></script>
 </body>
 
 </html>
