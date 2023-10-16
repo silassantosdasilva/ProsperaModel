@@ -815,14 +815,14 @@ transition: .3s;
   font-size: 14px;
 }
 .InfMovimentacoes{
-  width: 95%;
+  width: 94%;
   position: absolute;
-  left: 0;
-  /* background-color: #242424; */
+  left: -3em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.InfMovimentacoes li{
-margin-bottom: 2em;
-}
+
 
 /* Estilizando minha barra de rolagem das transacoes */
 .InfMovimentacoes::-webkit-scrollbar {
@@ -844,17 +844,11 @@ margin-bottom: 2em;
   border: none;
   outline: none;
   line-height: 3em;
-  padding-left: 2em;
+  padding-left: em;
   border-radius: 8px;
   background-color: var(--color-quartiary);
   color: white;
 }
-.InfMovimentacoes li {
- background-color: #7836FA;
- width: 47rem;
- height: 3em;
- border-radius: 8px;
- 
-}
+
 
 /*#endregion*/
