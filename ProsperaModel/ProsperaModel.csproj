@@ -10,6 +10,7 @@
     <Folder Include="img\" />
     <Folder Include="Diversos\" />
     <Folder Include="Sql\" />
+    <Folder Include="Views\Home\Cadastro\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -36,6 +36,7 @@ body {
   --color-quintiaty: #373435;
   --color-Sextiary:#605F60;
   --color-Fundo: #F4F2FF;
+  --color-RoxaCardMov:#8C52FF;
 }
 
 
@@ -780,14 +781,14 @@ transition: .3s;
 
 /*#region Mobimentações recentes*/
 .Cards{
-  /* background-color: #373435; */
+  background-color: #373435;
   width: 60%;
   height: 39rem;
   position: relative;
   display: flex;
   flex-direction: column;
   left: 13.9rem;
-  top:-.6em;
+  top:-.7em;
 
 }
 .CardMovRecentes{
@@ -795,7 +796,7 @@ transition: .3s;
   position: relative;
   height: 13rem;
   left: 4em;
-  bottom: 11.7em;
+  bottom: 6.2em;
   width: 102.5%;
 
 }
@@ -810,7 +811,7 @@ justify-content: space-evenly;
   border-top-right-radius: 10px;
   left: -1.8em;
   width: 43rem;
-  height: 5em; 
+  height: 4em; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
@@ -820,7 +821,7 @@ justify-content: space-evenly;
   padding-right: 2em;
   text-align: center;
   font-size: 13px; 
-  padding-top: 2em;
+  padding-top: 1em;
   color: white;
 }
 .CabecalhoMovimentacoes h4{
@@ -864,41 +865,166 @@ text-align: center;
   border: none;
   outline: none;
   text-align:center;
-  height: 4.5em;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 3.8em;
   width: 13.1em;
   background-color:var(--color-quartiary);
  color: white;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+ border-radius: 8px;
 
 }
 
 .InfMovimentacoes li:not(.CabecalhoMovimentacoes){
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-bottom: 3em;
-  height: 4.5em;
-  width: 95%;
+border-radius: 8px;
+  margin-bottom: 2.8em;
+  height: 3.8em;
+  width: 94.5%;
 background-color:var(--color-quartiary);
   color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 /*#endregion*/
 
 /*#region Evolucao meta*/
 .CardEvulucaoMeta{
-  background-color: red;
+  background-color: white;
   width: 86%;
-  height: 54%;
+  height: 42%;
   display: flex;
+  border-radius: 9px;
   position: relative;
-  flex-direction: column;
   left: 2.5em;
-  top: -4em;
+  top: -1.7;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 /*#endregion*/
 
+.CardCotBanc{
+  background-color: red;
+  width: 18%;
+  position: absolute;
+  left: 80%;
+  height: 68em;
+}
 
+.CardCotBanc img{
+  width:20px;
+
+}
+.CardCot{
+  background-color: white;
+  position: relative;
+  border-radius: 12px;
+  height: 33em;
+  width: 111%;
+  right: 2.9em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.ImgMundoCot{
+background-color: #7836FA;
+position: absolute;
+width: 80%;
+top: 1.8em;
+left: 2.9em;
+height: 8rem;
+z-index: 1;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.ImgMundoCot img{
+  width: 360px;
+  position: absolute;
+ right: -1.8em;
+ bottom: -.2em;
+}
+.CardCot li{
+background-color: #F4F2FF;
+z-index: 1;
+padding-bottom: 2em;
+}
 /*#region CardsPagamento*/
+.CardTransacoes{
+  /* background-color: #e64c30; */
+  position: relative;
+  display:flex;
+  flex-direction: row-reverse;
+  top: -.5em;
+  left: 2.6em;
+  width: 86%;
+  height: 33%;
+
+}
+
+.CardTransacoes li{
+  background-color: var(--color-RoxaCardMov);
+  position: absolute;
+  left: 4em;
+  height: 100%;
+  width: 23%;
+  border-radius: 9px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.CardUltReceb{
+  left: 28em !important;
+}
+.CardTotalTran{
+  left: 52.5em !important;
+}
+
+.CardTransacoes h2,h4,span{
+ text-align: center;
+ color: white;
+}
+.CardTransacoes h2{
+  padding-top: 1em;
+  font-size: 18px !important;
+  font-weight:600;
+ }
+
+ .CardTransacoes h4{
+  font-size: 15px !important;
+  font-weight: 500;
+ }
+ .CardTransacoes span input{
+  border: none;
+  outline: none;
+  background-color: var(--color-RoxaCardMov);
+  width: 76%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight:600;
+
+
+ }
+ .CardTransacoes span{
+position: absolute;
+/* background-color: #1B1572; */
+text-align: left;
+width:7.5em;
+font-size: 20px;
+left: 2.5em;
+font-weight:600;
+ }
+ .CardTransacoes img{
+  position: absolute;
+  left: 6em;
+  bottom: 2em;
+  width: 67px;
+  animation: rotate 3s linear infinite;
+ }
+
+/* Fazendo a imagem rodar */
+ @keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 
 /*#endregion*/
 

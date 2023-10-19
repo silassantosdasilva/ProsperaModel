@@ -23,90 +23,112 @@
 <body>
 
     <section id="CardCentral">
+        <!-- CardConversão e conta bancaria -->
+        <ul class="CardCotBanc">
+           <li class="ImgMundoCot"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/ImgMundoCotação.png"></li>
+            <li class="CardCot">
+                <li><span>Dolar</span><input type="text" value="1,00"></li> 
+                <li><span>Euro</span><input type="text" value="1,00"></li> 
+                <li><span>Yuan</span><input type="text" value="1,00"></li> 
+            </li>
+            <li class="CardBanc1"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/IconeBradesco.png"><input
+                    type="text" value="Bradesco"><input type="text" value="1.000,00"></li>
+            <li class="CardBanc2"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/IconeItau.png"><input
+                    type="text" value="Itau"><input type="text" value="1.000,00"></li>
+            <li class="CardBanc3"><img src="/ProsperaModel/img/PaginaInicial/CardCotBanc/IconeInter.png"><input
+                    type="text" value="Banco do Brasil"><input type="text" value="1.000,00"></li>
+
+            </li>
+        </ul>
+         <!-- Cardes Transacoes -->
         <div class="Cards container">
             <ul class="CardTransacoes">
                 <li class="CardUltPagto">
                     <h2>Pagamentos</h2>
                     <h4>Ultimo Pagamento</h4>
-                    <span>R$<input type="text" value="1.500,00"></span>
-                    <img src="#">
+                    <span>R$<input type="text" value="1.500,00" readonly></span>
+                    <img src="/ProsperaModel/img/PaginaInicial/CardMov/LogoCardMov1.png">
                 </li>
                 <li class="CardUltReceb">
                     <h2>Recebimentos</h2>
                     <h4>Ultimo Recebimento</h4>
-                    <span>R$<input type="text" value="1.000,00"></span>
-                    <img src="#">
+                    <span>R$<input type="text" value="1.000,00" readonly></span>
+                    <img src="/ProsperaModel/img/PaginaInicial/CardMov/LogoCardMov2.png">
                 </li>
                 <li class="CardTotalTran">
                     <h2>Trasações</h2>
-                    <h4>Total</h4>
-                    <span>R$<input type="text" value="500,00"></span>
-                    <img src="#">
+                    <h4>Total de Movimentações</h4>
+                    <span>R$<input type="text" value="500.000,00" readonly></span>
+                    <img src="/ProsperaModel/img/PaginaInicial/CardMov/LogoCardMov3.png">
                 </li>
             </ul>
+            <!-- Cardes Evolução meta -->
             <ul class="CardEvulucaoMeta container">
                 <ul>
-  <h2>teste</h2>
+                    <h2>teste</h2>
                 </ul>
             </ul>
+                 <!-- Cardes Movimentação recente -->
             <ul class="CardMovRecentes">
                 <li class="CabecalhoMovimentacoes">
                     <h2>Descrição</h2>
                     <h2>Valor</h2>
                     <h2>Status</h2>
                     <h2>Conta</h2>
-                    <h2>Observação</h2>
+                    <h2>Pessoa</h2>
                 </li>
+                
                 <ul class="InfMovimentacoes" style="max-height: 300px; overflow-y: auto;">
                     <h4>Movimentações recentes</h4>
-                    <li class="Inf1">               
-                        <input type="text" value="PAGAMENTO CONTA LUZ" readonly id="TxtDescInf1" maxlength="20">
+                    <li class="Inf1">
+                        <input type="text" value="Pagamento Conta de Luz" readonly id="TxtDescInf1" maxlength="20">
                         <input type="text" value="R$1.200,00" readonly id="TxtValorInf1" maxlength="6">
-                        <input type="text" value="ATRASADO" readonly id="TxtStatusInf1" maxlength="10">
-                        <input type="text" value="ITAU" readonly id="TxtContaInf1" max="8">
-                        <input type="text" value="PAGAMENTO DA CONTA DE LUZ DO MES 06" readonly id="TxtObsInf1" maxlength="30">
-                        
-                       
+                        <input type="text" value="Atrasado" readonly id="TxtStatusInf1" maxlength="10">
+                        <input type="text" value="Itau" readonly id="TxtContaInf1" max="8">
+                        <input type="text" value="Marcelo" readonly id="TxtObsInf1" maxlength="30">
+
+
                     </li>
                     <li class="Inf2">
-                       
+
                         <input type="text" value="teste" readonly id="TxtDescInf2">
                         <input type="text" value="teste" readonly id="TxtValorInf2">
                         <input type="text" value="teste" readonly id="TxtStatusInf2">
                         <input type="text" value="teste" readonly id="TxtContaInf2">
                         <input type="text" value="teste" readonly id="TxtObsInf2">
-                       
+
                     </li>
                     <li class="Inf3">
-                      
+
                         <input type="text" value="teste" readonly id="TxtDescInf3">
                         <input type="text" value="teste" readonly id="TxtValorInf3">
                         <input type="text" value="teste" readonly id="TxtStatusInf3">
                         <input type="text" value="teste" readonly id="TxtContaInf3">
                         <input type="text" value="teste" readonly id="TxtObsInf3">
-                       
+
                     </li>
                     <li class="Inf4">
-                   
+
                         <input type="text" value="teste" readonly id="TxtDescInf4">
                         <input type="text" value="teste" readonly id="TxtValorInf4">
                         <input type="text" value="teste" readonly id="TxtStatusInf4">
                         <input type="text" value="teste" readonly id="TxtContaInf4">
                         <input type="text" value="teste" readonly id="TxtObsInf4">
-                       
+
                     </li>
                     <li class="Inf5">
-                      
+
                         <input type="text" value="teste" readonly id="TxtDescInf5">
                         <input type="text" value="teste" readonly id="TxtValorInf5">
                         <input type="text" value="teste" readonly id="TxtStatusInf5">
                         <input type="text" value="teste" readonly id="TxtContaInf5">
                         <input type="text" value="teste" readonly id="TxtObsInf5">
-                       
+
                     </li>
-                   
+
                 </ul>
             </ul>
+
         </div>
     </section>
 
