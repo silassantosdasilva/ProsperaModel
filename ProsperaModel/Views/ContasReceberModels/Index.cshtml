@@ -1,0 +1,101 @@
+﻿@model IEnumerable<ProsperaModel.Models.ContasReceberModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatEmissaoCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatVencimentoCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevedorCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescricaoCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetodoPgtoCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContaBanCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgenciaContBanCR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatEmissaoCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatVencimentoCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevedorCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetodoPgtoCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContaBanCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgenciaContBanCR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdContasReceber">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdContasReceber">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdContasReceber">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

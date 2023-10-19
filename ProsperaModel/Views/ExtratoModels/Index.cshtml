@@ -1,0 +1,89 @@
+﻿@model IEnumerable<ProsperaModel.Models.ExtratoModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomBancoExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodContaExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinatarioExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoExtrat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomBancoExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodContaExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinatarioExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoExtrat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdExtrato">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdExtrato">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdExtrato">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

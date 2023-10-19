@@ -6,6 +6,7 @@ namespace SeuProjeto.Models
 {
     public class TerceirosModel
     {
+        [Key]
         public int IdTerceiros { get; set; }
 
         [Required]

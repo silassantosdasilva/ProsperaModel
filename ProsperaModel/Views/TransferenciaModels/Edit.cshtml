@@ -1,0 +1,74 @@
+﻿@model ProsperaModel.Models.TransferenciaModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TransferenciaModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdTransferencia" />
+            <div class="form-group">
+                <label asp-for="DestinatarioTransfe" class="control-label"></label>
+                <input asp-for="DestinatarioTransfe" class="form-control" />
+                <span asp-validation-for="DestinatarioTransfe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumContBan" class="control-label"></label>
+                <input asp-for="NumContBan" class="form-control" />
+                <span asp-validation-for="NumContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgenciaContBan" class="control-label"></label>
+                <input asp-for="AgenciaContBan" class="form-control" />
+                <span asp-validation-for="AgenciaContBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeBanTransfe" class="control-label"></label>
+                <input asp-for="NomeBanTransfe" class="form-control" />
+                <span asp-validation-for="NomeBanTransfe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorTransfe" class="control-label"></label>
+                <input asp-for="ValorTransfe" class="form-control" />
+                <span asp-validation-for="ValorTransfe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescricaoTransfe" class="control-label"></label>
+                <input asp-for="DescricaoTransfe" class="form-control" />
+                <span asp-validation-for="DescricaoTransfe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatAgendaTransfere" class="control-label"></label>
+                <input asp-for="DatAgendaTransfere" class="form-control" />
+                <span asp-validation-for="DatAgendaTransfere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoTransfe" class="control-label"></label>
+                <input asp-for="TipoTransfe" class="form-control" />
+                <span asp-validation-for="TipoTransfe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioTransfe" class="control-label"></label>
+                <select asp-for="UsuarioTransfe" class="form-control" asp-items="ViewBag.UsuarioTransfe"></select>
+                <span asp-validation-for="UsuarioTransfe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

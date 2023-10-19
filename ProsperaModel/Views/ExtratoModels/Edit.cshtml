@@ -1,0 +1,79 @@
+﻿@model ProsperaModel.Models.ExtratoModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ExtratoModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdExtrato" />
+            <div class="form-group">
+                <label asp-for="NomeExtrat" class="control-label"></label>
+                <input asp-for="NomeExtrat" class="form-control" />
+                <span asp-validation-for="NomeExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoExtrat" class="control-label"></label>
+                <input asp-for="TipoExtrat" class="form-control" />
+                <span asp-validation-for="TipoExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorExtrat" class="control-label"></label>
+                <input asp-for="ValorExtrat" class="form-control" />
+                <span asp-validation-for="ValorExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomBancoExtrat" class="control-label"></label>
+                <input asp-for="NomBancoExtrat" class="form-control" />
+                <span asp-validation-for="NomBancoExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodContaExtrat" class="control-label"></label>
+                <input asp-for="CodContaExtrat" class="form-control" />
+                <span asp-validation-for="CodContaExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinatarioExtrat" class="control-label"></label>
+                <input asp-for="DestinatarioExtrat" class="form-control" />
+                <span asp-validation-for="DestinatarioExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataExtrat" class="control-label"></label>
+                <input asp-for="DataExtrat" class="form-control" />
+                <span asp-validation-for="DataExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusExtrat" class="control-label"></label>
+                <input asp-for="StatusExtrat" class="form-control" />
+                <span asp-validation-for="StatusExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioExtrat" class="control-label"></label>
+                <select asp-for="UsuarioExtrat" class="form-control" asp-items="ViewBag.UsuarioExtrat"></select>
+                <span asp-validation-for="UsuarioExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObservacaoExtrat" class="control-label"></label>
+                <input asp-for="ObservacaoExtrat" class="form-control" />
+                <span asp-validation-for="ObservacaoExtrat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

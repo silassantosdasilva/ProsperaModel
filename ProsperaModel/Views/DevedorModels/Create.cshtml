@@ -1,0 +1,93 @@
+﻿@model ProsperaModel.Models.DevedorModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>DevedorModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomDevedor" class="control-label"></label>
+                <input asp-for="NomDevedor" class="form-control" />
+                <span asp-validation-for="NomDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailDevedor" class="control-label"></label>
+                <input asp-for="EmailDevedor" class="form-control" />
+                <span asp-validation-for="EmailDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleDevedor" class="control-label"></label>
+                <input asp-for="TeleDevedor" class="form-control" />
+                <span asp-validation-for="TeleDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tele2Devedor" class="control-label"></label>
+                <input asp-for="Tele2Devedor" class="form-control" />
+                <span asp-validation-for="Tele2Devedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndereDevedor" class="control-label"></label>
+                <input asp-for="EndereDevedor" class="form-control" />
+                <span asp-validation-for="EndereDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CidadeDevedor" class="control-label"></label>
+                <input asp-for="CidadeDevedor" class="form-control" />
+                <span asp-validation-for="CidadeDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BairroDevedor" class="control-label"></label>
+                <input asp-for="BairroDevedor" class="form-control" />
+                <span asp-validation-for="BairroDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UFDevedor" class="control-label"></label>
+                <input asp-for="UFDevedor" class="form-control" />
+                <span asp-validation-for="UFDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CEPDevedor" class="control-label"></label>
+                <input asp-for="CEPDevedor" class="form-control" />
+                <span asp-validation-for="CEPDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObservaDevedor" class="control-label"></label>
+                <input asp-for="ObservaDevedor" class="form-control" />
+                <span asp-validation-for="ObservaDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatCadasDevedor" class="control-label"></label>
+                <input asp-for="DatCadasDevedor" class="form-control" />
+                <span asp-validation-for="DatCadasDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusDevedor" class="control-label"></label>
+                <input asp-for="StatusDevedor" class="form-control" />
+                <span asp-validation-for="StatusDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaldoDevedor" class="control-label"></label>
+                <input asp-for="SaldoDevedor" class="form-control" />
+                <span asp-validation-for="SaldoDevedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
