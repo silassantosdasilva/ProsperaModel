@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ProsperaModel.Models.TransferenciaModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinatarioTransfe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumContBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgenciaContBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeBanTransfe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorTransfe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescricaoTransfe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatAgendaTransfere)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoTransfe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinatarioTransfe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumContBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgenciaContBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeBanTransfe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorTransfe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoTransfe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatAgendaTransfere)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoTransfe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTransferencia">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTransferencia">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTransferencia">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,96 @@
+﻿@model ProsperaModel.Models.DevedorModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>DevedorModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmailDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmailDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TeleDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TeleDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tele2Devedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tele2Devedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EndereDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EndereDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CidadeDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CidadeDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BairroDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BairroDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UFDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UFDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CEPDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CEPDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ObservaDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ObservaDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DatCadasDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DatCadasDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StatusDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StatusDevedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SaldoDevedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaldoDevedor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdDevedor">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

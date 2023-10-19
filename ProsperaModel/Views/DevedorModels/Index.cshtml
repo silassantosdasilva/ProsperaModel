@@ -1,0 +1,107 @@
+﻿@model IEnumerable<ProsperaModel.Models.DevedorModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tele2Devedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndereDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CidadeDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BairroDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UFDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CEPDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservaDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatCadasDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusDevedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SaldoDevedor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tele2Devedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndereDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CidadeDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BairroDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UFDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CEPDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservaDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatCadasDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusDevedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaldoDevedor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdDevedor">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdDevedor">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdDevedor">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

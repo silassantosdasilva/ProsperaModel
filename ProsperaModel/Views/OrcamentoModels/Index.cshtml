@@ -1,0 +1,119 @@
+﻿@model IEnumerable<ProsperaModel.Models.OrcamentoModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatEmissaoOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataValidadeOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescricaoOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeContatoOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeleOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tele2Orca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnderecoOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BairroOrca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatEmissaoOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataValidadeOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeContatoOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeleOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tele2Orca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnderecoOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BairroOrca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdOrcamento">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdOrcamento">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdOrcamento">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

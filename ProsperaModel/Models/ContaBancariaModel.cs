@@ -24,8 +24,5 @@ namespace ProsperaModel.Models
         [StringLength(80)]
         public string ObsContBan { get; set; }
 
-        [ForeignKey("UsuarioContBan")]
-        public int UsuarioContBan { get; set; }
-        public virtual UsuarioModel UsuarioModel { get; set; }
     }
 }

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ProsperaModel.Models.MetaModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatInicioMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataTerminoMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CatMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatInicioMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataTerminoMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CatMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdMeta">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdMeta">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdMeta">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

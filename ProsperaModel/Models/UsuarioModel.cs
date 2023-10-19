@@ -40,5 +40,6 @@ namespace ProsperaModel.Models
         [ForeignKey("IdTerceiros")]
         public int IdTerceiros { get; set; }
         public virtual TerceirosModel TerceirosModel { get; set; }
+
     }
 }

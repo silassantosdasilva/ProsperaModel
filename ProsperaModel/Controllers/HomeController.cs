@@ -15,7 +15,7 @@ namespace ProsperaModel.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("login");
         }
 
         public IActionResult Privacy()

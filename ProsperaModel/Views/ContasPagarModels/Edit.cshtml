@@ -1,0 +1,89 @@
+﻿@model ProsperaModel.Models.ContasPagarModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ContasPagarModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdContasPagar" />
+            <div class="form-group">
+                <label asp-for="CodCP" class="control-label"></label>
+                <input asp-for="CodCP" class="form-control" />
+                <span asp-validation-for="CodCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatEmissaoCP" class="control-label"></label>
+                <input asp-for="DatEmissaoCP" class="form-control" />
+                <span asp-validation-for="DatEmissaoCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatVencimentoCP" class="control-label"></label>
+                <input asp-for="DatVencimentoCP" class="form-control" />
+                <span asp-validation-for="DatVencimentoCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DevedorCP" class="control-label"></label>
+                <input asp-for="DevedorCP" class="form-control" />
+                <span asp-validation-for="DevedorCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescricaoCP" class="control-label"></label>
+                <input asp-for="DescricaoCP" class="form-control" />
+                <span asp-validation-for="DescricaoCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorCP" class="control-label"></label>
+                <input asp-for="ValorCP" class="form-control" />
+                <span asp-validation-for="ValorCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusCP" class="control-label"></label>
+                <input asp-for="StatusCP" class="form-control" />
+                <span asp-validation-for="StatusCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetodoPgtoCP" class="control-label"></label>
+                <input asp-for="MetodoPgtoCP" class="form-control" />
+                <span asp-validation-for="MetodoPgtoCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObservacaoCP" class="control-label"></label>
+                <input asp-for="ObservacaoCP" class="form-control" />
+                <span asp-validation-for="ObservacaoCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContaBanCP" class="control-label"></label>
+                <input asp-for="ContaBanCP" class="form-control" />
+                <span asp-validation-for="ContaBanCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgenciaContBanCP" class="control-label"></label>
+                <input asp-for="AgenciaContBanCP" class="form-control" />
+                <span asp-validation-for="AgenciaContBanCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioCP" class="control-label"></label>
+                <select asp-for="UsuarioCP" class="form-control" asp-items="ViewBag.UsuarioCP"></select>
+                <span asp-validation-for="UsuarioCP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

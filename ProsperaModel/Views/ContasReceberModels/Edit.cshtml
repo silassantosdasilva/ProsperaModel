@@ -1,0 +1,89 @@
+﻿@model ProsperaModel.Models.ContasReceberModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ContasReceberModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdContasReceber" />
+            <div class="form-group">
+                <label asp-for="CodCR" class="control-label"></label>
+                <input asp-for="CodCR" class="form-control" />
+                <span asp-validation-for="CodCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatEmissaoCR" class="control-label"></label>
+                <input asp-for="DatEmissaoCR" class="form-control" />
+                <span asp-validation-for="DatEmissaoCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatVencimentoCR" class="control-label"></label>
+                <input asp-for="DatVencimentoCR" class="form-control" />
+                <span asp-validation-for="DatVencimentoCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DevedorCR" class="control-label"></label>
+                <input asp-for="DevedorCR" class="form-control" />
+                <span asp-validation-for="DevedorCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescricaoCR" class="control-label"></label>
+                <input asp-for="DescricaoCR" class="form-control" />
+                <span asp-validation-for="DescricaoCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorCR" class="control-label"></label>
+                <input asp-for="ValorCR" class="form-control" />
+                <span asp-validation-for="ValorCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusCR" class="control-label"></label>
+                <input asp-for="StatusCR" class="form-control" />
+                <span asp-validation-for="StatusCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetodoPgtoCR" class="control-label"></label>
+                <input asp-for="MetodoPgtoCR" class="form-control" />
+                <span asp-validation-for="MetodoPgtoCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObservacaoCR" class="control-label"></label>
+                <input asp-for="ObservacaoCR" class="form-control" />
+                <span asp-validation-for="ObservacaoCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContaBanCR" class="control-label"></label>
+                <input asp-for="ContaBanCR" class="form-control" />
+                <span asp-validation-for="ContaBanCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgenciaContBanCR" class="control-label"></label>
+                <input asp-for="AgenciaContBanCR" class="form-control" />
+                <span asp-validation-for="AgenciaContBanCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioCR" class="control-label"></label>
+                <select asp-for="UsuarioCR" class="form-control" asp-items="ViewBag.UsuarioCR"></select>
+                <span asp-validation-for="UsuarioCR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

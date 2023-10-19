@@ -1,0 +1,101 @@
+﻿@model IEnumerable<ProsperaModel.Models.ContasPagarModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatEmissaoCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatVencimentoCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DevedorCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescricaoCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValorCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetodoPgtoCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObservacaoCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContaBanCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgenciaContBanCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatEmissaoCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatVencimentoCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevedorCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetodoPgtoCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObservacaoCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContaBanCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgenciaContBanCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario.EmailUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdContasPagar">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdContasPagar">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdContasPagar">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

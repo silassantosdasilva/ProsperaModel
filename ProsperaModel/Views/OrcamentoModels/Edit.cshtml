@@ -1,0 +1,104 @@
+﻿@model ProsperaModel.Models.OrcamentoModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>OrcamentoModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdOrcamento" />
+            <div class="form-group">
+                <label asp-for="NomeOrca" class="control-label"></label>
+                <input asp-for="NomeOrca" class="form-control" />
+                <span asp-validation-for="NomeOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatEmissaoOrca" class="control-label"></label>
+                <input asp-for="DatEmissaoOrca" class="form-control" />
+                <span asp-validation-for="DatEmissaoOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataValidadeOrca" class="control-label"></label>
+                <input asp-for="DataValidadeOrca" class="form-control" />
+                <span asp-validation-for="DataValidadeOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescricaoOrca" class="control-label"></label>
+                <input asp-for="DescricaoOrca" class="form-control" />
+                <span asp-validation-for="DescricaoOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorOrca" class="control-label"></label>
+                <input asp-for="ValorOrca" class="form-control" />
+                <span asp-validation-for="ValorOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObservacaoOrca" class="control-label"></label>
+                <input asp-for="ObservacaoOrca" class="form-control" />
+                <span asp-validation-for="ObservacaoOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatusOrca" class="control-label"></label>
+                <input asp-for="StatusOrca" class="form-control" />
+                <span asp-validation-for="StatusOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NomeContatoOrca" class="control-label"></label>
+                <input asp-for="NomeContatoOrca" class="form-control" />
+                <span asp-validation-for="NomeContatoOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeleOrca" class="control-label"></label>
+                <input asp-for="TeleOrca" class="form-control" />
+                <span asp-validation-for="TeleOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tele2Orca" class="control-label"></label>
+                <input asp-for="Tele2Orca" class="form-control" />
+                <span asp-validation-for="Tele2Orca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailOrca" class="control-label"></label>
+                <input asp-for="EmailOrca" class="form-control" />
+                <span asp-validation-for="EmailOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnderecoOrca" class="control-label"></label>
+                <input asp-for="EnderecoOrca" class="form-control" />
+                <span asp-validation-for="EnderecoOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoOrca" class="control-label"></label>
+                <input asp-for="EstadoOrca" class="form-control" />
+                <span asp-validation-for="EstadoOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BairroOrca" class="control-label"></label>
+                <input asp-for="BairroOrca" class="form-control" />
+                <span asp-validation-for="BairroOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioOrca" class="control-label"></label>
+                <select asp-for="UsuarioOrca" class="form-control" asp-items="ViewBag.UsuarioOrca"></select>
+                <span asp-validation-for="UsuarioOrca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
