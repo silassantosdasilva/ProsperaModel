@@ -15,14 +15,14 @@ namespace ProsperaModel.Controllers
 
         public IActionResult Index()
         {
-            return View("login");
+            return View("index");
         }
 
         public IActionResult Privacy()
         {
             return View();
         }
-
+    
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

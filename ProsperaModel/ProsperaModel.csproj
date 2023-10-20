@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Home\Cadastro\Cadastro.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Views\Home\Login\login.html" />
   </ItemGroup>
 
@@ -19,11 +15,6 @@
     <Folder Include="Diversos\" />
     <Folder Include="Migrations\" />
     <Folder Include="Sql\" />
-    <Folder Include="Views\Home\Cadastro\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Home\Cadastro\Cadastro.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
